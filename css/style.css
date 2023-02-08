@@ -116,6 +116,9 @@ main .container {
 .card:hover .hover {
     display: block;
 }
+.heart:hover {
+    color: #FF0000;
+} 
 /* !FOOTER */
 footer {
     background-color: #1A1A1A;
