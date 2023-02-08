@@ -1,0 +1,18 @@
+/* !RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    max-width: 1500px;
+}
+
+:root {
+    --header-clr: #FF6900;
+    --red-tag: #FF0000;
+    --green-tag: #008000;
+    --footer-clr: #1A1A1A;
+}
