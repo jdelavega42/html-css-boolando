@@ -80,7 +80,10 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 header > .container {
     color: white;
@@ -97,7 +100,7 @@ header img {
 }
 /* !MAIN */
 main .container {
-    margin: 30px auto 30px;
+    margin: 90px auto 30px;
     gap: 10px;
 }
 .card {
