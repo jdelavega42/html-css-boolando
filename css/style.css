@@ -11,6 +11,10 @@
     --green-tag: #008000;
     --footer-clr: #1A1A1A;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 body {
     max-width: 1500px;
     font-family: sans-serif;
@@ -64,11 +68,32 @@ img {
 .greenbox {
     background-color: #008000;
 }
+ul {
+    list-style: none;
+}
+.side li{
+    margin-right: .5rem;
+}
 /* !HEADER */
 header {
     background-color: #FF6900;
     height: 60px;
+    display: flex;
+    align-items: center;
     /* position: fixed; */
+}
+header > .container {
+    color: white;
+}
+header img {
+    max-height: 30px;
+}
+.container ul {
+    display: flex;
+}
+.logo {
+    text-align: center;
+    flex-grow: 2;
 }
 /* !MAIN */
 main .container {
@@ -94,6 +119,13 @@ main .container {
 /* !FOOTER */
 footer {
     background-color: #1A1A1A;
-    /* debug */
-    height: 60px;
+    color: white;
+    padding: 25px 0;
+}
+footer .container {
+    justify-content: space-between;
+}
+
+footer > .container > div > * {
+    margin-bottom: 1rem;
 }
