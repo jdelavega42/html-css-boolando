@@ -71,6 +71,9 @@ img {
 ul {
     list-style: none;
 }
+li a:hover {
+    text-decoration: underline;
+}
 .side li{
     margin-right: .5rem;
 }
@@ -82,8 +85,10 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: 3px 0 3px 3px rgba(0, 0, 0, .4);
 }
 header > .container {
     color: white;
@@ -94,9 +99,17 @@ header img {
 .container ul {
     display: flex;
 }
+.section {
+    width: 20%;
+}
 .logo {
     text-align: center;
     flex-grow: 2;
+}
+.profile {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 /* !MAIN */
 main .container {
@@ -112,12 +125,12 @@ main .container {
 }
 .hover {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
-.card:hover .hover {
-    display: block;
+.overlay:hover .hover {
+    display: inline-block;
+}
+.overlay:hover .display {
+    display: none;
 }
 .heart:hover {
     color: #FF0000;
